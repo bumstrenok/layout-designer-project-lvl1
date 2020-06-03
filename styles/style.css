@@ -5,6 +5,7 @@ main{
 .color-ffamaly{
     font-family: Arial, Helvetica, sans-serif;
     color: #303846;
+    margin: 0;
 }
 
 header{
@@ -25,6 +26,7 @@ header{
 
 .header-left a{
     padding: 10px;
+    color: #303846;
 }
 
 .header-right{
@@ -32,10 +34,32 @@ header{
 }
 
 .header-right a{
-    padding: 5px;
+    padding: 9px;
+    color: #303846;
 }
 
-a {
-      text-decoration: none;
-      color: #303846;
+.container{
+    text-align: center;
+    padding-top: 45px;
+
+    height: 300px;
+    background: url(../images/banner.png) 100% no-repeat;
+    background-size: cover;
+    
+    color: white;
   }
+
+.style-button{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+a.button{
+    color: white;
+}
+ 
+a {
+    text-decoration: none;
+}
