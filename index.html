@@ -8,26 +8,71 @@
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="color-ffamaly">
-    <header>
-        <div class="header-left">
+<body>
+    <header class="header-view order-flex">
+        <div class="header-left order-flex">
             <img src="images/logo.svg" width="40px" height="40px" alt="Логотип">
-            <a href=""><b>Лунное море</b></a>
+            <a><b>Лунное море</b></a>
         </div>
 
-        <nav class="header-right">
-            <a href=""><b>Преимущества</b></a>
-            <a href=""><b>О ЖК</b></a>
-            <a href=""><b>Места для отдыха</b></a>
+        <nav class="header-right order-flex">
+            <a href="#top"><b>Преимущества</b></a>
+            <a href="#middle"><b>О ЖК</b></a>
+            <a href="#bottom"><b>Места для отдыха</b></a>
         </nav>
     </header>
 
     <main>
-        <div class="container">
-            <img src="images/logo.svg" width="130px" height="130px" alt="Логотип">
-            <h1>ЖК «Лунное море»</h1>
-            <p>Место, откуда не хочется улетать</p>
-            <button class="style-button"><a href="" class="button">Забронировать</a></button>
+        <div class="top-section">
+            <div class="caption">
+                <img src="images/logo.svg" width="130px" height="130px" alt="Логотип">
+                <h1>ЖК «Лунное море»</h1>
+                <p>Место, откуда не хочется улетать</p>
+                <button class="style-button"><a href="" class="button">Забронировать</a></button>
+            </div>
+        </div>
+
+        <div class="top-content">
+            <section class="large-container">
+                <div class="small-container">
+                    <div class="piece-top-content">
+                        <h2><a name="top">Уникальный вид</a></h2>
+                        <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
+                    </div>
+
+                    <div class="piece-top-content">
+                        <h2><a name="middle">Инфраструктура</a></h2>
+                        <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
+                    </div>
+
+                    <div class="piece-top-content">
+                        <h2><a name="bottom">Близость к Москве</a></h2>
+                        <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="large-container color-light-gray">
+                <div class="small-container">
+                    <div class="text-alignment-left">
+                        <h2>О ЖК «Лунное море»</h2>
+                        <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
+                        <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
+                    </div>
+                    <img src="images/moon-1.jpg" width="310px" alt="moon-1">
+                </div>
+            </section>
+
+            <section class="large-container">
+                <div class="small-container">
+                    <img src="images/moon-2.jpg" width="310px" alt="moon-2">
+                    <div class="text-alignment-right">
+                        <h2>Места для отдыха</h2>
+                        <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
+                        <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 

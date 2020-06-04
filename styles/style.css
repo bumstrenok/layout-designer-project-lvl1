@@ -1,48 +1,51 @@
-main{
-    font-size: 16px;
+:root{
+    --text-color: #303846;
 }
 
-.color-ffamaly{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #303846;
-    margin: 0;
+main{
+    font-size: 16px;
 }
 
 header{
     background-color: white;
     width: 100%;
-    height: 50px;
+    height: 60px;
 
-    display: flex;
     align-items: center;
     justify-content: space-between;
 
     box-sizing: border-box;
 }
 
-.header-left {
-   display: flex;
+a {
+    text-decoration: none;
 }
 
-.header-left a{
-    padding: 10px;
+body{
+    font-family: Arial, Helvetica, sans-serif;
     color: #303846;
+    margin: 0;
 }
 
-.header-right{
+a.button{
+    color: white;
+}
+
+.header-view a{
+    padding: 10px;
+    color: var(--text-color);
+}
+
+.order-flex{
     display: flex;
 }
 
-.header-right a{
-    padding: 9px;
-    color: #303846;
-}
-
-.container{
-    text-align: center;
+.top-section{
+    display: flex;
+    justify-content: center;
     padding-top: 45px;
 
-    height: 300px;
+    height: 350px;
     background: url(../images/banner.png) 100% no-repeat;
     background-size: cover;
     
@@ -50,16 +53,53 @@ header{
   }
 
 .style-button{
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 5px;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 10px;
     background-color: transparent;
 }
 
-a.button{
-    color: white;
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
  
-a {
-    text-decoration: none;
+.top-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 150%;
+}
+
+.small-container{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.piece-top-content{
+    display: block;
+    width: 290px;
+}
+
+.text-alignment-left{
+    display: block;
+    padding-right: 100px;
+}
+
+.large-container{
+    display: flex;
+    justify-content: center;
+}
+
+.color-light-gray{
+    background-color: #f7f7f7; 
+}
+
+.text-alignment-right{
+    display: block;
+    padding-left: 100px;
 }
