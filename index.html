@@ -28,31 +28,31 @@
                 <img src="images/logo.svg" width="130px" height="130px" alt="Логотип">
                 <h1>ЖК «Лунное море»</h1>
                 <p>Место, откуда не хочется улетать</p>
-                <button class="style-button"><a href="" class="button">Забронировать</a></button>
+                <button class="style-top-button"><a href="#request" class="button">Забронировать</a></button>
             </div>
         </div>
 
         <div class="top-content">
-            <section class="large-container">
+            <section id="top" class="large-container">
                 <div class="small-container">
                     <div class="piece-top-content">
-                        <h2><a name="top">Уникальный вид</a></h2>
+                        <h2>Уникальный вид</h2>
                         <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
                     </div>
 
                     <div class="piece-top-content">
-                        <h2><a name="middle">Инфраструктура</a></h2>
+                        <h2>Инфраструктура</h2>
                         <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
                     </div>
 
                     <div class="piece-top-content">
-                        <h2><a name="bottom">Близость к Москве</a></h2>
+                        <h2>Близость к Москве</h2>
                         <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
                     </div>
                 </div>
             </section>
 
-            <section class="large-container color-light-gray">
+            <section id="middle" class="large-container color-light-gray">
                 <div class="small-container">
                     <div class="text-alignment-left">
                         <h2>О ЖК «Лунное море»</h2>
@@ -63,7 +63,7 @@
                 </div>
             </section>
 
-            <section class="large-container">
+            <section id="bottom" class="large-container">
                 <div class="small-container">
                     <img src="images/moon-2.jpg" width="310px" alt="moon-2">
                     <div class="text-alignment-right">
@@ -74,6 +74,50 @@
                 </div>
             </section>
         </div>
+
+        <section id="request" class="color-light-gray large-container">
+            <div class="request-alignment">
+                <h2>Оставьте заявку сегодня!</h2>
+                <form class="form-container">
+                    <fieldset class="grouping-fieldset">
+                        <legend class="legend-style">Параметры квартиры</legend>
+                        <div class="selection-block">
+                            <p>Количество комнат</p>
+                            <select class="selection-box">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="selection-block">
+                            <p>Отделка</p>
+                            <select class="selection-box">
+                                <option>Без отделки</option>
+                                <option>С отделкой</option>
+                                <option>С чайником</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="grouping-fieldset">
+                        <legend class="legend-style">Контактная информация</legend>
+                        <div class="selection-block">
+                            <p>Имя:</p>
+                            <input class="input" type="text">
+                        </div>
+                        <div class="selection-block">
+                            <p>Телефон:</p>
+                            <input class="input" type="text">
+                        </div>
+                        <div class="selection-block">
+                            <p>E-mail:</p>
+                            <input class="input" type="text">
+                        </div>
+                    </fieldset>
+                    <button class="style-bottom-button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>Третий блок</footer>

@@ -52,9 +52,9 @@ a.button{
     color: white;
   }
 
-.style-button{
+.style-top-button{
     border: 2px solid white;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     background-color: transparent;
 }
@@ -102,4 +102,57 @@ a.button{
 .text-alignment-right{
     display: block;
     padding-left: 100px;
+}
+
+
+.grouping-fieldset{
+    color: #00eec6;
+    border: 2px solid #00eec6;
+    font-weight: bold;
+    width: 350px;
+}
+
+.legend-style{
+    font-size: 20px;
+}
+
+.selection-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+.selection-box{
+    width: 110px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #aeb0b3;
+}
+
+.request-alignment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.input{
+    padding: 5px;
+    border-radius: 10px;
+    width: 200px;
+    border: 1px solid #aeb0b3;
+}
+
+.style-bottom-button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #00eec6;
+    color: #00eec6;
+    background-color: transparent;
+    margin-top: 10px;
+    font-weight: bold;
+    width: 150px;
+    font-size: 16px;
 }
