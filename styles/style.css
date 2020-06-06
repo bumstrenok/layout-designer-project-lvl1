@@ -1,5 +1,8 @@
 :root{
-    --text-color: #303846;
+    --main-text: #303846;
+    --white-color: white;
+    --width-block: 1000px;
+    --request-color: #00eec6;
 }
 
 main{
@@ -7,11 +10,8 @@ main{
 }
 
 header{
-    background-color: white;
+    background-color: var(--white-color);
     height: 60px;
-
-    align-items: center;
-    justify-content: space-between;
 }
 
 a {
@@ -20,33 +20,41 @@ a {
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--text-color);
+    color: var(--main-text);
     margin: 0;
-}
-
-a.button{
-    color: white;
 }
 
 .header-view a{
     padding: 10px;
-    color: var(--text-color);
+    color: var(--main-text);
 }
 
 .order-flex{
     display: flex;
 }
 
-.top-section{
-    display: flex;
+.jf-center{
     justify-content: center;
-    padding-top: 45px;
+}
 
+.jf-space-between{
+    justify-content: space-between;
+}
+
+.al-items-center{
+    align-items: center;
+}
+
+.dir-column{
+    flex-direction: column;
+}
+
+.top-section{
+    padding-top: 45px;
     height: 350px;
     background: url(../images/banner.png) 100% no-repeat;
     background-size: cover;
-    
-    color: white;
+    color: var(--white-color);
   }
 
 .style-top-button{
@@ -54,42 +62,27 @@ a.button{
     padding: 10px;
     border-radius: 10px;
     background-color: transparent;
-}
-
-.caption{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: var(--white-color);
 }
  
 .top-content{
-    display: flex;
-    flex-direction: column;
-    
     line-height: 150%;
 }
 
 .small-container{
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
+    width: var(--width-block);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .piece-top-content{
     display: block;
-    width: 290px;
+    width: 300px;
 }
 
 .text-alignment-left{
     display: block;
     padding-right: 100px;
-}
-
-.large-container{
-    display: flex;
-    justify-content: center;
 }
 
 .color-light-gray{
@@ -103,7 +96,7 @@ a.button{
 
 
 .grouping-fieldset{
-    color: #00eec6;
+    color: var(--request-color);
     border: 2px solid #00eec6;
 
     font-weight: bold;
@@ -115,11 +108,7 @@ a.button{
 }
 
 .selection-block{
-    display: flex;
-    align-items: center;   
-    justify-content: space-between;
-
-    color: var(--text-color);
+    color: var(--main-text);
 }
 
 .selection-box{
@@ -130,9 +119,6 @@ a.button{
 }
 
 .request-alignment{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -147,8 +133,8 @@ a.button{
 .style-bottom-button{
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid #00eec6;
-    color: #00eec6;
+    border: 2px solid var(--request-color);
+    color: var(--request-color);
     background-color: transparent;
     margin-top: 10px;
     font-weight: bold;
@@ -157,34 +143,25 @@ a.button{
 }
 
 .color-dark-gray{
-    display: flex;
-    justify-content: center;
-
-    background-color: var(--text-color);
+    background-color: var(--main-text);
     margin-top: -20px;
+}
+
+.height{
     height: 200px;
 }
 
 .footer{
     padding-top: 40px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
-
-   
+    color: var(--white-color);
+    width: var(--width-block);
 }
 
-.block{
+.footer-block{
     display: block;
     width: 300px;
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-}
-
-.flex h4{
+.al-items-center h4{
     padding-left: 10px;
 }
