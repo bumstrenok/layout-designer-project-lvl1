@@ -1,17 +1,18 @@
 :root{
     --main-text: #303846;
     --white-color: white;
-    --width-block: 1000px;
     --request-color: #00eec6;
+    --padding-50: 50px;
 }
 
 main{
     font-size: 16px;
 }
 
-header{
+.header-style{
     background-color: var(--white-color);
     position: fixed;
+    top: 0;
     width:100%;
     height: 60px;
 }
@@ -56,21 +57,27 @@ body{
     flex-direction: column;
 }
 
+.width-1000{
+    width: 1000px;
+}
+
 .top-section{
-    padding-top: 100px;
-    height: 350px;
+    padding-top: 110px;
+    padding-bottom: var(--padding-50);
     background: url(../images/banner.png) 100% no-repeat;
     background-size: cover;
     color: var(--white-color);
   }
 
-  .top-section h3{
+  .top-section h2{
       margin-top: 0;
+      font-size: 20px;
   }
 
   .top-section h1{
       font-size: 46px;
-      margin-bottom: 10px;
+      margin: 0;
+
   }
 
 .style-top-button{
@@ -86,9 +93,8 @@ body{
 }
 
 .small-container{
-    width: var(--width-block);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--padding-50);
+    padding-bottom: var(--padding-50);
 }
 
 .piece-top-content{
@@ -135,8 +141,8 @@ body{
 }
 
 .request-alignment{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--padding-50);
+    padding-bottom: var(--padding-50);
 }
 
 .input{
@@ -163,14 +169,10 @@ body{
     margin-top: -20px;
 }
 
-.height{
-    height: 200px;
-}
-
 .footer{
-    padding-top: 40px;
+    padding-top: var(--padding-50);
+    padding-bottom: var(--padding-50);
     color: var(--white-color);
-    width: var(--width-block);
 }
 
 .footer-block{
